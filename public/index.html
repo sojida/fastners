@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fastner.Co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <h1 class="logo">Fastners.Co</h1>
+        <label for="nav-toggle" class="nav-toggle-item"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">About Us</li>
+                <li class="nav-item">Our Products</li>
+                <li class="nav-item">Contact Us</li>
+                <li class="nav-item">Locate Us</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="courasel-container">
+            <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <img src="./assets/images/Fasteners-header.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="./assets/images/Bolt-with-nut.jpg" style="width:100%">
+                      <div class="text text-right">Caption Two</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="./assets/images/Serrated_hex_flange_nut.jpg" style="width:100%">
+                      <div class="text text-left">Caption Three</div>
+                    </div>
+
+                   
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                       <!-- The dots/circles -->
+                    <div style="text-align:center" class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                  </div>
+
+                   
+                  
+                  
+    </div>
+
+    <div id="about-us" class="about-us">
+        <h1 class="about-header">About Us</h1>
+        <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eaque labore libero.
+        Alias quam molestiae possimus officiis. Commodi dolores illum temporibus, voluptates possimus velit!
+        Nesciunt ut tempore veritatis nisi aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        officiis dolores? Unde pariatur architecto vel repudiandae beatae error sit in a corporis eum tempore mollitia ullam ducimus,
+        minima ipsa quidem.</p>
+    </div>
+
+    <div id="our-products">
+        <h1 class="products-header">Our Products</h1>
+        
+        <div class="tab-container">
+      
+            <div class="tab">
+                <button class="tablinks" name="London" id="defaultOpen" >London</button>
+                <button class="tablinks" name="Paris">Paris</button>
+                <button class="tablinks" name="Tokyo">Tokyo</button>
+            </div>
+          
+          <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+        </div>
+
+        <h2 class="products-footer">We deliver</h2>
+    </div>
+
+    <div id="contact-us">
+        <div class="contact-container">
+            <div class="contact-text-container">
+                <h1 class="contact-us-header">Contact Us</h1>
+                <p class="contact-us-text">
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Harum provident quidem modi
+                veritatis. Modi repudiandae laborum commodi 
+                reprehenderit, minima quaerat minus quae 
+                delectus ea animi perspiciatis dolore deleniti quis. Minima!
+                </p>
+
+                <div class="contact-info">
+                    <p class="contact-icon"><i class="far fa-clock"></i></p>
+                    <p class="contact-title">opening hours</p>
+                    <p class="contact-detail">time</p>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-icon"><i class="far fa-clock"></i></p>
+                    <p class="contact-title">opening hours</p>
+                    <p class="contact-detail">time</p>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-icon"><i class="far fa-clock"></i></p>
+                    <p class="contact-title">opening hours</p>
+                    <p class="contact-detail">time</p>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-icon"><i class="far fa-clock"></i></p>
+                    <p class="contact-title">opening hours</p>
+                    <p class="contact-detail">time</p>
+                </div>
+
+            </div>
+
+            <div class="contact-form-container">
+                <h2>You can message us now</h2>
+
+                <form >
+                    <input type="text" name="fullname" >
+                    <input type="email" name="email">
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="locate-us">
+        locate-us
+    </div>
+
+    <div id="footer">
+        footer
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/tabs.js"></script>
+</body>
+</html>

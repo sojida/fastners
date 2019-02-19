@@ -5,7 +5,6 @@ const tabButton = tab.querySelectorAll('button')
 tabButton.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         name = e.currentTarget.attributes.name.value
-        console.log(name)
         openCity(e, name)
     })
 })

@@ -364,7 +364,7 @@ body {
   grid-column: 2 / 3;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: minmax(100px) minmax(100px);
+  grid-template-columns: 1fr 1fr
   
 }
 

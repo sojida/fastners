@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0;
@@ -13,10 +17,12 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
+
 :root{
-  --primary: rgba(1,82,125,0.85)
+  --primary: rgba(3,125,167,0.85)
 }
 
 .alternate{
@@ -45,8 +51,26 @@ body {
     grid-template-columns: 1fr auto minmax(300px, 3fr) 1fr;
   }
 
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    transition: 0.5s;
+    background: transparent;
+}
+
+
+
+  #navbar a:hover {
+    color: var(--primary);
+    background: #fff;
+  }
+
   .logo{
     grid-column: 2 / 3;
+    margin: 10px auto;
+
   }
 
   nav{
@@ -199,7 +223,7 @@ body {
   justify-content: center;
   align-content: center;
   height: 400px;
-  background: url('../assets/images/aboutus.jpg');
+  background: var(--primary);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,6 +326,10 @@ body {
   overflow: scroll;
 }
 
+.tabcontent h3 {
+  text-align: center;
+}
+
 .product-container{
   clear: both;
   display: flex;
@@ -312,6 +340,7 @@ body {
 
 .product-card{
   max-width: 100px;
+  height: 100px;
   border: 2px solid var(--primary);
   box-shadow: 5px 5px 8px #888888;
   margin: 10px;
@@ -325,12 +354,16 @@ body {
 
 .product-details{
   text-align: center;
+  position: relative;
+  
   background: var(--primary);
   color: white;
 }
 
 .product-image{
   width: 100%;
+  height: 100%;
+ 
 }
 
 /* Contact Us */
@@ -348,7 +381,7 @@ body {
   grid-column: 2 / 3;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: minmax(100px) minmax(100px);
+  grid-template-columns: 1fr 1fr
   
 }
 
@@ -357,6 +390,7 @@ body {
   background: var(--primary);
   color: #fff;
   padding: 10px;
+  margin: 5px;
 }
 .contact-us-header{
   padding: 10px;
@@ -375,6 +409,8 @@ body {
   grid-column: 2 / 3;
   border: 2px solid var(--primary);
   padding: 20px;
+  margin: 5px;
+  text-shadow: 2px 2px 2px #111;
 }
 
 .contact-info{
@@ -390,6 +426,7 @@ body {
   align-self: center;
   justify-self: center;
   margin: 10px;
+  text-shadow: 2px 2px 4px #111;
 }
 
 .contact-title, .contact-detail {
@@ -397,18 +434,34 @@ body {
   margin-left: 10px;
 }
 
+.contact-title{
+  align-self: flex-end;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #111;
+}
+
 .contact-form{
   margin: 20px auto;
   text-align: center;
 }
 
+.contact-form label{
+  display: block;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
 .contact-form input, .contact-form textarea{
-  width: 80%;
+  width: 100%;
   margin: 5px auto;
   font-size: 1rem;
   padding: 10px;
-  background: lightgrey;
+  background: #fff;
   border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #111;
   
 }
 
@@ -419,6 +472,8 @@ body {
 }
 
 .contact-form button{
+  display: block;
+  margin: auto;
   height: 50px;
   width: 80%;
   outline: none;
@@ -438,6 +493,7 @@ body {
 
 #footer{
   height: 30px;
+  padding: 5px;
   text-align: center;
   color: #fff;
   background: var(--primary);
@@ -475,11 +531,13 @@ body {
   
   .contact-text-container{
     grid-column: 1 / 3;
+    margin: 0;
     
   }
 
   .contact-form-container{
     grid-column: 1 / 3;
+    margin: 0;
    
   }
   
@@ -520,11 +578,13 @@ body {
   .nav-toggle-item{
     position: absolute;
     right: 0;
-    top: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    top: 30%;
+    display: inline-block;
+    margin: auto;
     margin-right: 1em;
+    justify-items: center;
+    border: 2px solid white;
+    padding: 5px;
   }
   
   nav li{
@@ -541,6 +601,15 @@ body {
   .nav-toggle:checked ~ nav li{
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    border: none;
+    transition: 0.5s;
+    background: transparent;
   }
   
 }
